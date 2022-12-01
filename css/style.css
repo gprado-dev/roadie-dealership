@@ -511,8 +511,8 @@ textarea {
   border-bottom: 2px solid var(--color-primary-normal);
 }
 
-.input-box > input:focus-visible + label {
-  transform: translate(0, -35px);
+.input-box:focus-within >  label {
+  transform: translate(0, 0);
 }
 
 
