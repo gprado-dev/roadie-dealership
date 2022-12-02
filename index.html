@@ -61,9 +61,6 @@
   <!-- Title-->
   <title>Roadie Dealership: concessionária de veículos automotores</title>
 
-  <!-- Recaptcha -->
-  <script src='https://www.google.com/recaptcha/api.js'></script>
-
 </head>
 
 <body>
@@ -118,11 +115,11 @@
     <!-- Menu Mídias Sociais -->
     <nav class="tertiary-menu">
 
-        <a href=""><img class="svg" src="svg/icon_instagram.svg" alt="Instagram"></a>
-        <a href=""><img class="svg" src="svg/icon_youtube.svg" alt="YouTube"></a>
-        <a href=""><img class="svg" src="svg/icon-linkedin.svg" alt="LinkedIn"></a>
-        <a href=""><img class="svg" src="svg/icon_facebook.svg" alt="Facebook"></a>
-        <a href=""><img class="svg" src="svg/icon_whatsapp.svg" alt="WhatsApp"></a>
+        <a href=""><span class="svg svg-instagram"></span></a>
+        <a href=""><span class="svg svg-youtube"></span></a>
+        <a href=""><span class="svg svg-linkedin"></span></a>
+        <a href=""><span class="svg svg-facebook"></span></a>
+        <a href=""><span class="svg svg-whatsapp"></span></a>
 
     </nav>
 
@@ -153,11 +150,11 @@
     <!-- Carrossel -->
     <div class="carrossel">
       
-      <a href="#"><img id="back" src="svg/icon-back.svg" alt="Anterior"></a>
-      <a href="#"><img class="car opacity" src="img/carros/carro-1.png" alt=""></a>
+      <a href="#"><span class="back"></span></a>
+      <a href="#"><img class="car-small opacity" src="img/carros/carro-1.png" alt=""></a>
       <a href="#"><img class="car" src="img/carros/carro-2.png" alt=""></a>
-      <a href="#"><img class="car opacity" src="img/carros/carro-3.png" alt=""></a>
-      <a href="#"><img id="next" src="svg/icon-next.svg" alt="Próximo"></a>
+      <a href="#"><img class="car-small opacity" src="img/carros/carro-3.png" alt=""></a>
+      <a href="#"><span class="next"></span></a>
 
     </div>
 
@@ -224,32 +221,49 @@
         <!-- Nome -->
         <div class="input-box">
           <label for="">Nome</label>
-          <input type="text">
+          <input type="text"
+          required
+          placeholder="Seu nome">
         </div>
 
         <!-- Sobrenome -->
         <div class="input-box">
           <label for="">Sobrenome</label>
-          <input type="text">
+          <input type="text"
+          required
+          placeholder="Seu sobrenome">
         </div>
 
         <!-- E-mail -->
         <div class="input-box">
           <label for="">E-mail</label>
-          <input type="email" name="email" id="email">
+          <input type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="exemplo@email.com">
         </div>
 
         <!-- Telefone -->
         <div class="input-box">
           <label for="">Telefone</label>
-          <input type="tel">
+          <input type="tel"
+          required="required" 
+          maxlength="15" 
+          name="tel" 
+          pattern="[0-9]+$" 
+          placeholder="(00) 00000-0000">
         </div>
 
           <!-- Estado -->
         <div class="input-box">
           <label for="estado">Estado</label>
-          <select name="estado" id="estado">
-            <option value="empty"></option>
+          <select
+          name="estado"
+          id="estado"
+          required
+          >
+            <option value="empty" selected>Selecione uma opção</option>
             <option value="AC">Acre</option>
             <option value="AL">Alagoas</option>
             <option value="AP">Amapá</option>
@@ -282,17 +296,16 @@
         <!-- Cidade -->
         <div class="input-box">
           <label for="">Cidade</label>
-          <select name="cidade" id="cidade"></select>
+          <select name="cidade" id="cidade" required>
+            <option value="empty">Selecione uma opção</option>
+          </select>
         </div>
 
         <!-- Mensagem -->
         <div class="mensagem">
           <label for="">Mensagem</label>
-          <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+          <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
         </div>
-
-        <!-- reCaptcha -->
-        <div class="g-recaptcha" data-sitekey="6LdbW0cjAAAAAHdhr3KTuzJCZmfj9IDP7rc9vR2W"></div>
 
 
         <!-- Botão Enviar -->
