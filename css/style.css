@@ -679,7 +679,7 @@ RESPONSIVIDADE ---------------------------------------------
       display: grid;
       grid-template-columns: 1fr;
       padding: 0 16px;
-      height: 80vh;
+      height: auto;
     }
 
     .main-content {
